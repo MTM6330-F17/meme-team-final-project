@@ -3,9 +3,9 @@ const sass = require('gulp-sass')
 const sassPath = 'scss/**/*.scss'
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
-const cssnano - require('cssnano')
+const cssnano = require('cssnano')
 
-gulp.task('sass', function(){
+gulp.task('default', function(){
 
 const plugins = [
 
