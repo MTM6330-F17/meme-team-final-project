@@ -1,17 +1,33 @@
 $deep-grey: #282c34;
 $white-text: rgba(255,255,255, .98);
 $blue: #247cbf;
+$orange: #ffa352;
+$turq: #16c2d9;
+$navy: #247cbf;
+$darkblue: #063745;
 
 
 body{
   background-color: $deep-grey;
-  color: #fff;
+  color: #000;
 }
 
 h1{
-  color: #7c6a96;
+  color: $navy;
+}
+
+
+button{
+  background-color: $orange;
+  border-radius: 25px;
+  color: #fff;
+  padding: 5px;
+}
+
+.row:nth-child(even){
+  background-color: #fff;
 }
 
 .row:nth-child(odd){
-  background-color: $blue;
+  background-color: #fff;
 }
