@@ -1,17 +1,75 @@
+@import 'custom';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 $deep-grey: #282c34;
 $white-text: rgba(255,255,255, .98);
 $blue: #247cbf;
 
 
 body{
-  background-color: $deep-grey;
-  color: #fff;
+  background-color: white;
+  color: $dark-blue;
 }
 
 h1{
-  color: #7c6a96;
+  color: $dark-blue;
 }
 
-.row:nth-child(odd){
-  background-color: $blue;
+.row:nth-child(2){
+  background-color: $light-blue;
+}
+
+
+
+// NAV SASS
+.navbar{
+  background-color: $light-blue;
+
+  a{
+    color: $dark-blue;
+  }
+}
+
+
+
+// PAGE HEADER SASS
+.header > img {
+  height: 100px;
+  width: 80px;
+}
+
+
+
+
+// LIST PAGE SASS
+.courses-header{
+  background-color: $dark-blue;
+height: 150px;
+margin-bottom: 20px;
+h1{
+  color: $white;
+}
+}
+
+.list-header{
+  background-color: $light-blue;
+  color: $white;
+  text-align: center;
+}
+
+.list-body{
+  .btn{
+    background-color: $orange;
+    border: $orange;
+  }
+}
+
+
+
+
+// FOOTER SASS
+.footer{
+  background-color: $dark-blue;
+  color: $white;
+  text-align: center;
 }
