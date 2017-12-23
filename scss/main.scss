@@ -1,6 +1,17 @@
 $deep-grey: #282c34;
 $white-text: rgba(255,255,255, .98);
+$blue: #247cbf;
+
 
 body{
   background-color: $deep-grey;
+  color: #fff;
+}
+
+h1{
+  color: #7c6a96;
+}
+
+.row:nth-child(odd){
+  background-color: $blue;
 }
