@@ -43,8 +43,59 @@ h1{
   }
 }
 
+.row {
+  background-size: cover;
+}
 
+button{
+  background-color: $orange;
+  border: $orange;
+  border-radius: 5%;
+}
 
+.form-control {
+  button{
+
+  }
+}
+
+.index-header{
+  h1, h2{
+    color: $white;
+  }
+}
+
+//INDEX SASS
+
+.circle{
+width: 300px;
+
+  @include media-breakpoint-up(md){
+  border-radius: 200%;
+  width: 500px;
+}
+}
+
+.index-outline{
+  margin: 20px 0;
+
+  @include media-breakpoint-up(md){
+margin: 50px 0;
+  }
+}
+
+.icon-nav{
+  border: 1px solid $light-blue;
+  margin: 0 5px;
+
+  h3{
+    font-size: 20px;
+    color: $dark-blue;
+  }
+  :hover{
+    cursor: pointer;
+  }
+}
 
 // LIST PAGE SASS
 .courses-header{
