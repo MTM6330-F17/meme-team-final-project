@@ -1,3 +1,6 @@
+@import 'custom';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 $deep-grey: #282c34;
 $white-text: rgba(255,255,255, .98);
 $blue: #247cbf;
@@ -8,6 +11,7 @@ $darkblue: #063745;
 
 
 body{
+<<<<<<< HEAD
   background-color: $deep-grey;
   color: #000;
 }
@@ -30,4 +34,157 @@ button{
 
 .row:nth-child(odd){
   background-color: #fff;
+=======
+  background-color: white;
+  color: $dark-blue;
+}
+
+h1{
+  color: $dark-blue;
+}
+
+.row:nth-child(2){
+  background-color: $light-blue;
+}
+
+
+
+// NAV SASS
+.navbar{
+  background-color: $light-blue;
+
+  a{
+    color: $dark-blue;
+  }
+}
+
+
+
+// PAGE HEADER SASS
+.header > img {
+  height: 50px;
+  width: 100px;
+
+  @include media-breakpoint-up(lg){
+    height: 100px;
+    width: 80px;
+  }
+}
+
+.row {
+  background-size: cover;
+}
+
+button{
+  background-color: $orange;
+  border: $orange;
+  border-radius: 5%;
+}
+
+.form-control {
+  button{
+
+  }
+}
+
+.index-header{
+  h1, h2{
+    color: $white;
+  }
+}
+
+//INDEX SASS
+
+.circle{
+width: 300px;
+
+  @include media-breakpoint-up(md){
+  border-radius: 200%;
+  width: 500px;
+}
+}
+
+.index-outline{
+  margin: 20px 0;
+
+  @include media-breakpoint-up(md){
+margin: 50px 0;
+  }
+}
+
+.icon-nav{
+  border: 1px solid $light-blue;
+  margin: 0 5px;
+
+  h3{
+    font-size: 20px;
+    color: $dark-blue;
+  }
+  :hover{
+    cursor: pointer;
+  }
+}
+
+// LIST PAGE SASS
+.courses-header{
+  background-color: $dark-blue;
+margin-bottom: 20px;
+text-align: center;
+h1{
+  color: $white;
+}
+h2{
+  color: $white
+}
+h3{
+  color: $white
+}
+
+@include media-breakpoint-up(md){
+  height: 150px;
+  text-align: none;
+}
+}
+
+.list-header, .outline-header{
+  background-color: $light-blue;
+  color: $white;
+  text-align: center;
+}
+
+.list-body{
+  .btn{
+    background-color: $orange;
+    border: $orange;
+    align-self: center;
+  }
+}
+
+
+// OUTLINE PAGE SASS
+
+//See List Page SASS for outline-header
+
+.outline-container{
+  border: 1px solid $dark-blue;
+  margin: 20px 0;
+}
+
+.courseNav {
+a{
+margin: 10%;
+
+  @include media-breakpoint-up(md){
+    margin: 5%;
+  }
+}
+
+}
+
+// FOOTER SASS
+.footer{
+  background-color: $dark-blue;
+  color: $white;
+  text-align: center;
+>>>>>>> master
 }
