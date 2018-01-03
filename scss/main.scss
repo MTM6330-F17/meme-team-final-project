@@ -20,13 +20,15 @@ h1 {
 }
 
 // NAV SASS
-.navbar {
+.navbar, .navigation {
   background-color: $light-blue;
-
   a {
     color: $dark-blue;
   }
 }
+
+
+
 // PAGE HEADER SASS
 .header > img {
   height: 50px;
