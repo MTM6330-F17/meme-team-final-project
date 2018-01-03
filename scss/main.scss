@@ -13,7 +13,11 @@ button {
   padding: 5px;
 }
 
-
+a {
+  :hover{
+    cursor: pointer;
+  }
+}
 
 h1 {
   color: $dark-blue;
@@ -58,6 +62,14 @@ button {
   h2 {
     color: $white;
   }
+}
+
+.header-img{
+  width: 200px;
+
+}
+.about{
+  background-color: $white;
 }
 //INDEX SASS
 .circle {
