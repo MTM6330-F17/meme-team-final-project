@@ -13,20 +13,26 @@ button {
   padding: 5px;
 }
 
-
+a {
+  :hover{
+    cursor: pointer;
+  }
+}
 
 h1 {
   color: $dark-blue;
 }
 
 // NAV SASS
-.navbar {
+.navbar, .navigation {
   background-color: $light-blue;
-
   a {
     color: $dark-blue;
   }
 }
+
+
+
 // PAGE HEADER SASS
 .header > img {
   height: 50px;
@@ -56,6 +62,14 @@ button {
   h2 {
     color: $white;
   }
+}
+
+.header-img{
+  width: 200px;
+
+}
+.about{
+  background-color: $white;
 }
 //INDEX SASS
 .circle {
