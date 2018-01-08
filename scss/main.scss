@@ -65,11 +65,13 @@ button {
 }
 
 .header-img{
+  margin-top: 15px;
   width: 200px;
 
 }
 .about{
   background-color: $white;
+  border-radius: 20px;
 }
 //INDEX SASS
 .circle {
@@ -134,7 +136,7 @@ button {
   .btn {
     background-color: $orange;
     border: $orange;
-    align-self: center;
+    width: 100%;
   }
 }
 // OUTLINE PAGE SASS
