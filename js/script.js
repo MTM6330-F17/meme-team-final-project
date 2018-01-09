@@ -42,26 +42,36 @@ $(document).click(function(event) {
   //general about builder
   if (current == 'about') {
     buildInfo(about);
+    $('.submenu').removeClass('selected');
+    $('#about').addClass('selected');
   }
 
   //specific for the About IMD page
   else if (current == 'IMDcourseList') {
     $('#informationArea').empty().append("<p><h1>Course List</h1>");
     buildInfoList(IMDcourseList);
+    $('.submenu').removeClass('selected');
+    $('#IMDcourseList').addClass('selected');
   }
 
   else if (current == 'scheduleList') {
     buildInfo(scheduleList);
+    $('.submenu').removeClass('selected');
+    $('#scheduleList').addClass('selected');
   }
 
   //Specific Prof page variables
   else if (current == 'coursesTaught') {
     $('#informationArea').empty().append("<p><h1>Course Taught</h1>");
     buildInfoList(coursesTaught);
+    $('.submenu').removeClass('selected');
+    $('#coursesTaught').addClass('selected');
   }
 
   else if (current == 'contact') {
     buildInfo(contact);
+    $('.submenu').removeClass('selected');
+    $('#contact').addClass('selected');
   }
 
   // course variables
@@ -69,15 +79,21 @@ $(document).click(function(event) {
   else if (current == 'topics'){
     $('#informationArea').empty().append("<p><h1>Course Content</h1>");
     buildInfoList(topics);
+    $('.submenu').removeClass('selected');
+    $('#topics').addClass('selected');
   }
 
   else if (current == 'prof') {
     buildInfo(prof);
+    $('.submenu').removeClass('selected');
+    $('#prof').addClass('selected');
   }
 
   else if (current == 'grading'){
     $('#informationArea').empty().append("<p><h1>Grading Scheme</h1>");
     buildInfoList(grading);
+    $('.submenu').removeClass('selected');
+    $('#grading').addClass('selected');
   }
 
 
