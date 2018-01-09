@@ -1,7 +1,4 @@
-var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
+
 
 //NOTES ON VARIABLES - PAGE SPECIFIC VARIABLES HAVE TO BE SET ****BEFORE**** ADDING THE SCRIPT
 
@@ -16,16 +13,33 @@ function buildInfo(infoarray){
         writestuff  += '<p>' + p + '</p>';
     }
     _displayinfo.innerHTML = writestuff;
-}
+};
+
+function buildInfoList(infoarray){
+
+    let writestuff = "<ul> ";
 
 
-_infoButton1.addEventListener('click', function(e){
+    for(let p of infoarray){
+        writestuff  += '<li>' + p + '<li>';
+    }
+
+    writestuff  += '</ul>';
+    _displayinfo.innerHTML = writestuff;
+};
+
+
+$("div").click( function(e){
   current = e.target.getAttribute('id');
 
-  if (e.target.getAttribute('class') === 'infoButton'){
+  if (e.target.getAttribute('class') === 'infoPara'){
 
     buildInfo(current);
 
+  } else if (e.target.getAttribute('class') === 'infoList'){
+
+    buildInfoList(current);
+
   }
 
-}
+});

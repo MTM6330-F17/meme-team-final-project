@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>IMD Program Information</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- KIO NOTE: ALL PAGE SPECIFIC VARIABLES HAVE TO GO IN THE FOLLOWING SCRIPT TAG AREA-->
+<script>
+
+    let about = ["This two-year Ontario College Diploma program is designed to prepare students for a variety of careers in the digital media industry. Students explore the primary elements of media project planning and development with equal importance given to the creative and the technical aspects. Strong emphasis is placed on hands-on media production through courses in web development, digital imaging, authoring, animation, photography and video. Students plan and execute individual and team-based projects and gain practical experience working with live clients. The curriculum is delivered on a variety of platforms including Apple OS X, Windows and a variety of mobile operating systems.",
+    "Bring Your Own Device (BYOD): Students are expected to have and use a laptop or mobile computing device when registered in this on-campus program. Hardware and software specifications required by your program are outlined at http://algonquincollege.com/byod. Mobile devices/laptops and supplies can be purchased directly from Algonquin`s New Technology Store at educational rates."];
+    let IMDcourseList = [""];
+
+
+</script>
+  <script src="js/script.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel='stylesheet' href="css/min/main.css">
 </head>
@@ -47,7 +59,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdown01">
                 <a class="dropdown-item" href="profsList.html"><strong>All Professors</strong></a>
                 <a class="dropdown-item" href="#">Hussein Tayrani</a>
-                <a class="dropdown-item" href="#">Katie Tremblay</a>
+                <a class="dropdown-item" href="profkTremblay.html">Katie Tremblay</a>
                 <a class="dropdown-item" href="#">Michael Eisenbraun</a>
               </div>
             </li>
@@ -71,14 +83,14 @@
 <!--COURSE INFO -->
     <div class="row outline-header">
       <div class="col-lg-12 courseNav">
-        <a>About the Program</a>
-        <a>List of Courses</a>
-        <a>Current Semester Schedules</a>
+        <div class="infoPara submenu" id="about">About the Program</div>
+        <div class="infoList submenu" id="IMDcourseList" >List of Courses</div>
+        <div class="infoPara submenu" id="schedulesList">Current Semester Schedules</div>
       </div>
     </div>
 
     <div class="row outline-container">
-      <div class="col-md-10 offset-md-1">
+      <div class="col-md-10 offset-md-1" id="informationArea">
         <h1>About</h1>
         <p>Having static content works well if your website only has a few pages. However, today's modern sites frequently have thousands of pages. Building on the importance of dynamic websites learned through their experiences with Content Management Systems, students leverage databases to store and output content and change websites content and interface elements based on user interactions. The focus is on creating dynamic data and APIs to be used with responsive websites.
 

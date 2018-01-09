@@ -102,6 +102,18 @@ button {
     cursor: pointer;
   }
 }
+
+
+//SUBMENU SASS
+
+
+.submenu{
+  display: inline-block;
+  width: 20%;
+  padding: 20px;
+}
+
+
 // LIST PAGE SASS
 .courses-header {
   background-color: $dark-blue;
@@ -139,11 +151,19 @@ button {
     width: 100%;
   }
 }
+
+.profIcon{
+  border-radius: 50%;
+  width: 100px;
+}
 // OUTLINE PAGE SASS
 //See List Page SASS for outline-header
 .outline-container {
   border: 1px solid $dark-blue;
   margin: 20px 0;
+    @include media-breakpoint-up(lg){
+    margin-top: 80px;
+  }
 }
 
 .courseNav {
