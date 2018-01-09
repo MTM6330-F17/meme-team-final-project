@@ -13,6 +13,7 @@ button {
   padding: 5px;
 }
 
+
 a {
   :hover{
     cursor: pointer;
@@ -31,7 +32,10 @@ h1 {
   }
 }
 
-
+.active{
+  text-decoration: underline;
+  color: $white;
+}
 
 // PAGE HEADER SASS
 .header > img {
@@ -93,6 +97,10 @@ button {
   border: 1px solid $light-blue;
   margin: 0 5px;
 
+  a{
+    text-decoration: none;
+  }
+
   h3 {
     font-size: 20px;
     color: $dark-blue;
@@ -109,8 +117,11 @@ button {
 
 .submenu {
   display: inline-block;
+@include media-breakpoint-up(md){
   width: 20%;
   padding: 20px;
+}
+width: 20%
 }
 
 .submenu:hover {
@@ -136,7 +147,7 @@ button {
     color: $white;
   }
   @include media-breakpoint-up(md) {
-    height: 150px;
+    height: 100%;
     text-align: none;
   }
 }
