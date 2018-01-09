@@ -5,24 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>IMD Program Information: About IMD</title>
+  <title>IMD Prof: Michael Eisenbraun</title>
 
+  <!-- KIO NOTE: IMPORTING THE JQUERY LIBRARY HAS TO HAPPEN FIRST-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- KIO NOTE: ALL PAGE SPECIFIC VARIABLES HAVE TO GO IN THE FOLLOWING SCRIPT TAG AREA-->
   <script>
-    let about = ["<h1>About</h1>",
-      "This two-year Ontario College Diploma program is designed to prepare students for a variety of careers in the digital media industry. Students explore the primary elements of media project planning and development with equal importance given to the creative and the technical aspects. Strong emphasis is placed on hands-on media production through courses in web development, digital imaging, authoring, animation, photography and video. Students plan and execute individual and team-based projects and gain practical experience working with live clients. The curriculum is delivered on a variety of platforms including Apple OS X, Windows and a variety of mobile operating systems.",
-      "Bring Your Own Device (BYOD): Students are expected to have and use a laptop or mobile computing device when registered in this on-campus program. Hardware and software specifications required by your program are outlined at http://algonquincollege.com/byod. Mobile devices/laptops and supplies can be purchased directly from Algonquin`s New Technology Store at educational rates. "
+    let about = ["<h1>About Michael Eisenbraun</h1>",
+      "I built my first web site in 1997. Although I didn’t know then, this curiosity in the emerging field of web design sent me down a 20 year long path that would forever change my life. I have over a decade of professional experience in the field of web development and design. I have worked for small companies, a large corporation, and not-for-profits organizations. I have been a web designer, a full stack developer and everything in between.",
+
+      "I am largely self-taught and constantly striving to learn more. The field of web design and development is ever-changing and if you don’t keep moving, you will fall behind. It is this realization that lead me to start teaching at Algonquin College in January of 2016. I have a passion for learning and it fuels my desire to share what I know with others. It has become my new passion, and my primary focus. I aim to be the best teacher I can, and it is my hope that my students will find the same spark of curiosity that changed my life all those years ago.",
+      "I am currently a part-time professor at Algonquin College for the Interactive Media and Design program.",
+
     ];
-    let IMDcourseList = ["<h2>Level 01</h2> <ul> <li> Digital Citizenship </li> <li>Introduction to DSLR</li> <li>Responsive Web Design</li> <li>Digital Graphics</li>  <li>Design Foundations</li> </ul>",
-      "<h2>Level 02</h2> <ul> <li> Communications I </li> <li>Video Foundations</li> <li>Client-Side Web Development</li> <li>Content Management Systems I</li>  <li>User Design Experience</li> <li>General Education Elective</li> </ul>",
-      "<h2>Level 03</h2> <ul> <li> Digital Citizenship </li> <li>Introduction to DSLR</li> <li>Responsive Web Design</li> <li>Digital Graphics</li>  <li>Design Foundations</li> </ul>",
-      "<h2>Level 04</h2> <ul> <li> Digital Citizenship </li> <li>Introduction to DSLR</li> <li>Responsive Web Design</li> <li>Digital Graphics</li>  <li>Design Foundations</li> </ul>"
+    let contact = ["<h1>Contact Michael Eisenbraun</h1>",
+      "<u>Email</u>: eisenbm@algonquincollege.com",
+      "<u>Website</u>: <a href='http://michaeleisenbraun.com/' target='_blank'>michael.eisenbraun.com</a>",
+      "Michael is a full-time professor at Algonquin College and a web developer."
     ];
-    let scheduleList = ["<h1>Schedules</h1>"];
+    let coursesTaught = ["Server Side Web Development", "Introduction to Web Design", "Web Design II",
+  ];
   </script>
   <!-- KIO NOTE: LASTLY THE CUSTOM JQUERY MADE HAS TO BE ADDED, AS THIS USES BOTH THE JAVASCRIPT IMPORTED ABOVE AND ALL THE VARIABLES THAT ARE SPECIFIC TO THE PAGE-->
   <script src="js/script.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel='stylesheet' href="css/min/main.css">
 </head>
@@ -41,8 +47,8 @@
     <div class="row navigation">
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#openNav" aria-controls="openNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="openNav">
           <ul class="navbar-nav mr-auto">
@@ -80,35 +86,36 @@
     <!--PAGE HEADER -->
     <div class="row courses-header">
       <div class="col-lg-1 offset-lg-1 col-xs-3 offset-xs-1">
-        <img class="about header-img" src="img/logo.png" alt="imd-logo" />
+        <img class="header-img profIcon" src="img/profMeisenbraun.png" alt="Server-Side Web Development" />
       </div>
       <div class="col-lg-7 offset-lg-2 col-xs-7 offset-xs-1">
-        <h1>About IMD</h1>
+        <h1>Michael Eisenbrauni</h1>
       </div>
     </div>
 
     <!--COURSE INFO -->
     <div class="row outline-header">
       <div class="col-lg-12 courseNav">
-        <div class="infoPara submenu" id="about">About IMD</div>
-        <div class="infoList submenu" id="IMDcourseList">List of Courses</div>
-        <div class="infoPara submenu" id="scheduleList">Semester Schedules</div>
+        <div class="infoPara submenu" id="about">About</div>
+        <div class="infoPara submenu" id="contact">Contact Information</div>
+        <div class="infoList submenu" id="coursesTaught">Courses Taught</div>
       </div>
     </div>
 
     <div class="row outline-container">
       <div class="col-md-10 offset-md-1" id="informationArea">
-        <p>
-          <h1>About</h1></p>
-        <p>This two-year Ontario College Diploma program is designed to prepare students for a variety of careers in the digital media industry. Students explore the primary elements of media project planning and development with equal importance given to
-          the creative and the technical aspects. Strong emphasis is placed on hands-on media production through courses in web development, digital imaging, authoring, animation, photography and video. Students plan and execute individual and team-based
-          projects and gain practical experience working with live clients. The curriculum is delivered on a variety of platforms including Apple OS X, Windows and a variety of mobile operating systems.</p>
-        <p>Bring Your Own Device (BYOD): Students are expected to have and use a laptop or mobile computing device when registered in this on-campus program. Hardware and software specifications required by your program are outlined at http://algonquincollege.com/byod.
-          Mobile devices/laptops and supplies can be purchased directly from Algonquin`s New Technology Store at educational rates.</p>
+        <p><h1>About Michael Eisenbraun</h1></p>
+        <p>I built my first web site in 1997. Although I didn’t know then, this curiosity in the emerging field of web design sent me down a 20 year long path that would forever change my life. I have over a decade of professional experience in the field
+          of web development and design. I have worked for small companies, a large corporation, and not-for-profits organizations. I have been a web designer, a full stack developer and everything in between.</p>
+
+        <p>I am largely self-taught and constantly striving to learn more. The field of web design and development is ever-changing and if you don’t keep moving, you will fall behind. It is this realization that lead me to start teaching at Algonquin College
+          in January of 2016. I have a passion for learning and it fuels my desire to share what I know with others. It has become my new passion, and my primary focus. I aim to be the best teacher I can, and it is my hope that my students will find the
+          same spark of curiosity that changed my life all those years ago.</p>
+
+        <p>I am currently a part-time professor at Algonquin College for the Interactive Media and Design program.</p>
       </div>
+
     </div>
-
-
     <!--FOOTER -->
     <div class="row footer">
       <div class="col-md-12">
