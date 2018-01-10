@@ -88,9 +88,12 @@ button {
   background-color: $orange;
   border: $orange;
   border-radius: 5%;
+  margin-bottom:10px;
 }
 
-
+.search{
+  margin: 10px auto 10px auto;
+}
 
 .index-header {
   h1,
@@ -103,7 +106,8 @@ button {
 
 .header-img{
   margin-top: 15px;
-  width: 200px;
+  width: 100%;
+  height:auto;
 
 }
 .about{
@@ -115,7 +119,11 @@ button {
   width: 300px;
   @include media-breakpoint-up(md) {
     border-radius: 200%;
-    width: 500px;
+  }
+  @include media-breakpoint-up(lg) {
+    border-radius: 200%;
+    width: 400px;
+    height:auto;
   }
 }
 
@@ -162,10 +170,13 @@ width: 20%
   }
 
 .selected{
-    background-color:$orange;
-    color: $dark-blue;
+    background-color:$dark-blue;
+    color: $light-blue;
     font-weight:500;
     transition: .3s ease;
+    a{
+        color: $light-blue;
+    }
   }
 
 
