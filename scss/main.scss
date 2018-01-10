@@ -28,7 +28,7 @@ a {
 
 h1 {
   color: $dark-blue;
-  font-size: 25px;
+  font-size: 20px;
   @include media-breakpoint-up(md){
 font-size: 30px;
   }
