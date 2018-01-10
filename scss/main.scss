@@ -6,17 +6,11 @@ body {
   color: #000;
 }
 
-span{
-  color: $dark-blue !important;
-}
-
 button {
   background-color: $orange;
+  border-radius: 25px;
   color: #fff;
   padding: 5px;
-  border: $orange;
-  border-radius: 5%;
-  margin-bottom:10px;
 }
 
 
@@ -65,15 +59,7 @@ font-size: 25px;
   a {
     color: $dark-blue;
   }
-  button span{
-    color: $dark-blue;
-  }
 }
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 
 .active{
   text-decoration: underline;
@@ -84,7 +70,6 @@ font-size: 25px;
 .header > img {
   height: 50px;
   width: 100px;
-  margin: 10px;
   @include media-breakpoint-up(lg) {
     height: 100px;
     width: 80px;
@@ -99,9 +84,13 @@ font-size: 25px;
   background-size: cover;
 }
 
-.search{
-  margin: 10px auto 10px auto;
+button {
+  background-color: $orange;
+  border: $orange;
+  border-radius: 5%;
 }
+
+
 
 .index-header {
   h1,
@@ -114,10 +103,9 @@ font-size: 25px;
 
 .header-img{
   margin-top: 15px;
-  width: 100%;
-  height: auto;
-}
+  width: 200px;
 
+}
 .about{
   background-color: $white;
   border-radius: 20px;
@@ -127,11 +115,7 @@ font-size: 25px;
   width: 300px;
   @include media-breakpoint-up(md) {
     border-radius: 200%;
-  }
-  @include media-breakpoint-up(lg) {
-    border-radius: 200%;
-    width: 400px;
-    height:auto;
+    width: 500px;
   }
 }
 
@@ -178,13 +162,10 @@ width: 20%
   }
 
 .selected{
-    background-color:$dark-blue;
-    color: $light-blue;
+    background-color:$orange;
+    color: $dark-blue;
     font-weight:500;
-    transition: .3s ease;
-    a{
-        color: $light-blue;
-    }
+    transition: .5s ease;
   }
 
 
@@ -210,10 +191,6 @@ width: 20%
     height: 100%;
     text-align: none;
   }
-  img{
-      margin-top:20px;
-  }
-
 }
 
 .list-header,
