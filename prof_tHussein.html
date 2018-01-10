@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IMD Prof: Hussein Tayrani</title>
+
+  <!-- KIO NOTE: IMPORTING THE JQUERY LIBRARY HAS TO HAPPEN FIRST-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- KIO NOTE: ALL PAGE SPECIFIC VARIABLES HAVE TO GO IN THE FOLLOWING SCRIPT TAG AREA-->
+  <script>
+    let about = ["<h1>About Hussein Tayrani</h1>",
+      "Hussein is currently a professor at Algonquin College in the School of Media and Design. He teaches Design, Video and Motion Graphics courses for IMD. Helping his students to thrive and become professionals at work are among his main goals.",
+      "Hussein's drive is powered by a special fuel he identifies as his <italic>'Coffeetivity'</italic>, the combination of coffee with creativity. When his colleagues see him tackling a project with a cup of coffee in his hand, there is no doubt he is up to something genius. On a regular day, if not teaching or working on Motion Graphics  projects, Hussein is watching, playing or reading news about soccer."
+    ];
+    let contact = ["<h1>Contact Hussein Tayrani</h1>",
+      "<u>Phone</u>: (613) 355-8700",
+      "<u>Skype</u>: tayranihussein",
+      "<u>Email</u>: hussein@tayrani.com",
+      "<u>Website</u>: <a href='http://www.tayrani.com/' target='_blank'>tayrani.com</a>",
+      "Hussein is a full-time professor at Algonquin College"
+    ];
+    let coursesTaught = ["Motion Graphics", "Motion Graphics Lab", "Audio and Video", "Video I", "Digital Publishing", "Content Management Systems I", "Clients, Contracts and Projects",
+      "Digital Signage", "Multimedia Technology I", "Multimedia Technology II"
+    ]
+  </script>
+  <!-- KIO NOTE: LASTLY THE CUSTOM JQUERY MADE HAS TO BE ADDED, AS THIS USES BOTH THE JAVASCRIPT IMPORTED ABOVE AND ALL THE VARIABLES THAT ARE SPECIFIC TO THE PAGE-->
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel='stylesheet' href="css/min/main.css">
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <!--BRAND HEADER -->
+    <div class="row header">
+      <h1 class="col-lg-10 d-none d-md-block main-title">Interactive Media Design</h1>
+      <img class="col-lg-2 float-right" src="img/imd-logo.png" alt="IMD Logo" />
+    </div>
+
+    <!--MAIN NAVIGATION -->
+    <div class="row navigation">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#openNav" aria-controls="openNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="openNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About IMD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="courseList.html"><strong>All Courses</strong></a>
+                <a class="dropdown-item" href="serverSide.html">Server-Side Web Development</a>
+                <a class="dropdown-item" href="motionGraphics.html">Motion Graphics</a>
+                <a class="dropdown-item" href="projectManagement.html">Project Management</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active selected">
+              <a class="nav-link dropdown-toggle active" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professors</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="profsList.html"><strong>All Professors</strong></a>
+                <a class="dropdown-item" href="prof_tHussein.html">Hussein Tayrani</a>
+                <a class="dropdown-item" href="prof_kTremblay.html">Katie Tremblay</a>
+                <a class="dropdown-item" href="prof_mEisenbraun.html">Michael Eisenbraun</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.algonquincollege.com/mediaanddesign/program/interactive-media-design/" target="_blank">More Information</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--PAGE HEADER -->
+    <div class="row courses-header">
+      <div class="col-lg-1 offset-lg-1 col-xs-3 offset-xs-1">
+        <img class="header-img profIcon" src="img/hussein.jpg" alt="Server-Side Web Development" />
+      </div>
+      <div class="col-lg-7 offset-lg-2 col-xs-7 offset-xs-1">
+        <h1 class="header-outline-title">Hussein Tayrani</h1>
+      </div>
+    </div>
+
+    <!--COURSE INFO -->
+    <div class="row outline-header">
+      <div class="col-lg-12 courseNav">
+        <div class="infoPara submenu selected" id="about">About</div>
+        <div class="infoPara submenu" id="contact">Contact Information</div>
+        <div class="infoList submenu" id="coursesTaught">Courses Taught</div>
+      </div>
+    </div>
+
+    <div class="row outline-container">
+      <div class="col-md-10 offset-md-1" id="informationArea">
+        <p><h1>About Hussein Tayrani</h1></p>
+        <p>Hussein is currently a professor at Algonquin College in the School of Media and Design. He teaches Design, Video and Motion Graphics courses for IMD. Helping his students to thrive and become professionals at work are among his main goals.</p>
+
+        <p>Hussein's drive is powered by a special fuel he identifies as his 'Coffeetivity', the combination of coffee with creativity. When his colleagues see him tackling a project with a cup of coffee in his hand, there is no doubt he is up to something genius.
+        On a regular day, if not teaching or working on Motion Graphics projects, Hussein is watching, playing or reading news about soccer.</p>
+      </div>
+
+  </div>
+      <!--FOOTER -->
+      <div class="row footer">
+        <div class="col-md-12">
+          <footer class="container">
+            <p>&copy; Interactive Media Design 2017</p>
+            <!--center align text-->
+          </footer>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- /container-fluid -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

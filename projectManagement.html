@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IMD Course: Project Management Skills</title>
+
+  <!-- KIO NOTE: IMPORTING THE JQUERY LIBRARY HAS TO HAPPEN FIRST-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- KIO NOTE: ALL PAGE SPECIFIC VARIABLES HAVE TO GO IN THE FOLLOWING SCRIPT TAG AREA-->
+
+  <script>
+    //So all of this is information about Katie Tremblay, from Katie herself, all the profs gave permission to have their information for this project
+
+    let about = ["<h1>About Project Management</h1>",
+      "Effective management of time, resources, clients, and teams is crucial to the success of any project. Students learn the theory of project management, following industry standard guidelines and best practices. The full project cycle is explored, including planning, managing risks, intellectual property rights, client and team communication, project scope, project documentation and closure.",
+      "Prerequisites: None"
+    ];
+    "<underline>Prerequisites</underline>: MTM6200"
+    let topics = ["Project Life Cycle",
+      "Business Cases",
+      "Project Management Tools",
+      "Project Charter",
+      "Developing the Project Plan",
+      "Developing the Financial Plan",
+      "The Tender Process",
+      "Monitoring and Control",
+      "Project Closure",
+    ];
+
+    let prof = ["<h1>Profs for this Course</h1>",
+      "Katie Tremblay",
+      "Susan Murphy",
+      "Kaan Bayulken"
+    ];
+
+    let grading = ["<b>Assignments:</b> 20%",
+      "<b>In class Exercises:</b> 20%",
+      "<b>In Class Quizzes:</b> 10%",
+      "<b>Midterm Project:</b> 20%",
+      "<b>Final Project:</b> 20%",
+      "<b>Review Questions:</b> 10%"
+    ];
+  </script>
+
+  <!-- KIO NOTE: LASTLY THE CUSTOM JQUERY MADE HAS TO BE ADDED, AS THIS USES BOTH THE JAVASCRIPT IMPORTED ABOVE AND ALL THE VARIABLES THAT ARE SPECIFIC TO THE PAGE-->
+  <script src="js/script.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel='stylesheet' href="css/min/main.css">
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <!--BRAND HEADER -->
+    <div class="row header">
+      <h1 class="col-lg-10 d-none d-md-block main-title">Interactive Media Design</h1>
+      <img class="col-lg-2 float-right" src="img/imd-logo.png" alt="IMD Logo" />
+    </div>
+
+    <!--MAIN NAVIGATION -->
+    <div class="row navigation">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#openNav" aria-controls="openNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="openNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About IMD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle active selected" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="courseList.html"><strong>All Courses</strong></a>
+                <a class="dropdown-item" href="serverSide.html">Server-Side Web Development</a>
+                <a class="dropdown-item" href="motionGraphics.html">Motion Graphics</a>
+                <a class="dropdown-item" href="projectManagement.html">Project Management</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professors</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="profsList.html"><strong>All Professors</strong></a>
+                <a class="dropdown-item" href="prof_tHussein.html">Hussein Tayrani</a>
+                <a class="dropdown-item" href="prof_kTremblay.html">Katie Tremblay</a>
+                <a class="dropdown-item" href="prof_mEisenbraun.html">Michael Eisenbraun</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.algonquincollege.com/mediaanddesign/program/interactive-media-design/" target="_blank">More Information</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--PAGE HEADER -->
+    <div class="row courses-header">
+      <div class="col-lg-1 offset-lg-1 col-xs-3 offset-xs-1">
+        <img class="header-img profIcon" src="img/pm.png" alt="Motion graphics Icon. " />
+      </div>
+      <div class="col-lg-7 offset-lg-2 col-xs-7 offset-xs-1">
+        <h1>Project Management Skills</h1>
+        <h2>MTM6361</h2>
+        <h3>IMD Semester 3</h3>
+      </div>
+    </div>
+
+    <!--COURSE INFO -->
+    <div class="row outline-header">
+      <div class="col-lg-12 courseNav">
+        <div class="infoPara submenu selected" id="about">About</div>
+        <div class="infoPara submenu" id="topics">Topics</div>
+        <div class="infoPara submenu" id="prof">Professor</div>
+        <div class="infoPara submenu" id="grading">Grading</div>
+      </div>
+    </div>
+
+    <div class="row outline-container">
+      <div class="col-md-10 offset-md-1" id="informationArea">
+        <p>
+          <h1>About Project Management</h1></p>
+        <p>Effective management of time, resources, clients, and teams is crucial to the success of any project. Students learn the theory of project management, following industry standard guidelines and best practices. The full project cycle is explored,
+          including planning, managing risks, intellectual property rights, client and team communication, project scope, project documentation and closure.</p>
+
+        <p>Prerequisites: None</p>
+      </div>
+    </div>
+
+
+    <!--FOOTER -->
+    <div class="row footer">
+      <div class="col-md-12">
+        <footer class="container">
+          <p>&copy; Interactive Media Design 2017</p>
+          <!--center align text-->
+        </footer>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- /container-fluid -->
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

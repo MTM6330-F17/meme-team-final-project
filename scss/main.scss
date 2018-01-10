@@ -18,22 +18,69 @@ h1{
   color: $navy;
 }
 
+<<<<<<< HEAD
 
 button{
-  background-color: $orange;
-  border-radius: 25px;
-  color: #fff;
-  padding: 5px;
+=======
+span{
+  color: $dark-blue !important;
 }
 
+button {
+>>>>>>> master
+  background-color: $orange;
+  color: #fff;
+  padding: 5px;
+  border: $orange;
+  border-radius: 5%;
+  margin-bottom:10px;
+}
+
+<<<<<<< HEAD
 .row:nth-child(even){
   background-color: #fff;
+=======
+
+a {
+  :hover{
+    cursor: pointer;
+  }
+>>>>>>> master
 }
 
 .row:nth-child(odd){
   background-color: #fff;
   background-color: white;
   color: $dark-blue;
+  font-size: 25px;
+  @include media-breakpoint-up(md){
+font-size: 30px;
+  }
+  @include media-breakpoint-up(lg){
+font-size: 40px;
+  }
+}
+
+h2 {
+  color: $dark-blue;
+  font-size: 15px;
+  @include media-breakpoint-up(md){
+font-size: 20px;
+  }
+  @include media-breakpoint-up(lg){
+font-size: 30px;
+  }
+}
+
+h3 {
+  color: $dark-blue;
+  font-size: 13px;
+  @include media-breakpoint-up(md){
+font-size: 15px;
+  }
+  @include media-breakpoint-up(lg){
+font-size: 25px;
+  }
 }
 
 h1{
@@ -53,25 +100,42 @@ h1{
   a{
     color: $dark-blue;
   }
+  button span{
+    color: $dark-blue;
+  }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
+.active{
+  text-decoration: underline;
+  color: $white;
+}
 
 // PAGE HEADER SASS
 .header > img {
   height: 50px;
   width: 100px;
+<<<<<<< HEAD
 
   @include media-breakpoint-up(lg){
+=======
+  margin: 10px;
+  @include media-breakpoint-up(lg) {
+>>>>>>> master
     height: 100px;
     width: 80px;
   }
 }
 
-.row {
-  background-size: cover;
+.main-title{
+  padding-top: 20px;
 }
 
+<<<<<<< HEAD
 button{
   background-color: $orange;
   border: $orange;
@@ -82,14 +146,25 @@ button{
   button{
 
   }
+=======
+.row {
+  background-size: cover;
+}
+
+.search{
+  margin: 10px auto 10px auto;
+>>>>>>> master
 }
 
 .index-header{
   h1, h2{
     color: $white;
   }
+  text-align: center;
+
 }
 
+<<<<<<< HEAD
 //INDEX SASS
 
 .circle{
@@ -99,6 +174,34 @@ width: 300px;
   border-radius: 200%;
   width: 500px;
 }
+=======
+.header-img{
+  width: 30%;
+  height: auto;
+}
+
+.about{
+  background-color: $white;
+  border-radius: 20px;
+  @include media-breakpoint-up(md){
+    width: 150px;
+  }
+  @include media-breakpoint-up(lg){
+    width: 150px;
+  }
+}
+//INDEX SASS
+.circle {
+  width: 300px;
+  @include media-breakpoint-up(md) {
+    border-radius: 200%;
+  }
+  @include media-breakpoint-up(lg) {
+    border-radius: 200%;
+    width: 400px;
+    height:auto;
+  }
+>>>>>>> master
 }
 
 .index-outline{
@@ -109,10 +212,20 @@ margin: 50px 0;
   }
 }
 
+<<<<<<< HEAD
 .icon-nav{
   border: 1px solid $light-blue;
   margin: 0 5px;
   justify-content: center;
+=======
+.icon-nav {
+
+  margin: 10px;
+
+  a{
+    text-decoration: none;
+  }
+>>>>>>> master
 
   h3{
     font-size: 20px;
@@ -122,6 +235,58 @@ margin: 50px 0;
     cursor: pointer;
   }
 }
+<<<<<<< HEAD
+=======
+
+.mobileNav{
+  width: 125px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+}
+
+.mobNavRow{
+  width: 250px;
+  margin: 0 auto;
+}
+
+
+//SUBMENU SASS
+
+
+.submenu {
+  display: inline-block;
+@include media-breakpoint-up(md){
+  width: 20%;
+  padding: 20px;
+}
+width: 20%
+}
+
+.submenu:hover {
+    cursor: pointer;
+  }
+
+.selected{
+    background-color:$dark-blue;
+    color: $light-blue;
+    font-weight:500;
+    transition: .3s ease;
+    a{
+        color: $light-blue;
+    }
+  }
+
+
+// LIST PAGE SASS
+.courses-header {
+  background-color: $dark-blue;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+>>>>>>> master
 
 
 // LIST PAGE SASS
@@ -139,26 +304,54 @@ h3{
   color: $white
 }
 
+<<<<<<< HEAD
 @include media-breakpoint-up(md){
   height: 150px;
   text-align: none;
 }
+=======
+  h3 {
+    color: $white;
+  }
+  @include media-breakpoint-up(md) {
+    height: 100%;
+    text-align: none;
+  }
+
+>>>>>>> master
 }
 
 .list-header, .outline-header{
   background-color: $light-blue;
   color: $white;
   text-align: center;
+
 }
 
 .list-body{
   .btn{
     background-color: $orange;
     border: $orange;
-    align-self: center;
+    width: 100%;
   }
 }
 
+<<<<<<< HEAD
+=======
+.profIcon{
+  border-radius: 50%;
+  width: 100px;
+  @include media-breakpoint-up(lg){
+  width: 150px;
+}
+}
+
+iframe{
+  border: none;
+  width: 99%;
+  height: 650px;
+}
+>>>>>>> master
 
 // OUTLINE PAGE SASS
 
@@ -167,6 +360,13 @@ h3{
 .outline-container{
   border: 1px solid $dark-blue;
   margin: 20px 0;
+    @include media-breakpoint-up(lg){
+    margin-top: 80px;
+  }
+}
+
+.header-outline-title{
+  padding-top: 20px;
 }
 
 .courseNav {
@@ -185,4 +385,9 @@ margin: 10%;
   background-color: $dark-blue;
   color: $white;
   text-align: center;
+}
+
+
+.float-right{
+  float: right;
 }
