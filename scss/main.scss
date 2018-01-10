@@ -39,9 +39,9 @@ font-size: 40px;
 
 h2 {
   color: $dark-blue;
-  font-size: 20px;
+  font-size: 15px;
   @include media-breakpoint-up(md){
-font-size: 25px;
+font-size: 20px;
   }
   @include media-breakpoint-up(lg){
 font-size: 30px;
@@ -52,7 +52,7 @@ h3 {
   color: $dark-blue;
   font-size: 13px;
   @include media-breakpoint-up(md){
-font-size: 20px;
+font-size: 15px;
   }
   @include media-breakpoint-up(lg){
 font-size: 25px;
@@ -189,11 +189,15 @@ font-size: 25px;
   width: 20%;
   padding: 20px;
 }
+
 width: 25%
 }
 
 .sub-course{
   width: 21%;
+
+width: 20%
+
 }
 
 .submenu:hover {
