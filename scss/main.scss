@@ -257,7 +257,7 @@ width: 20%
   a {
     margin: 10%;
     @include media-breakpoint-up(md) {
-      margin: 10%;
+      margin: 5%;
     }
   }
 }
