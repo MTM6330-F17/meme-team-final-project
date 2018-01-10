@@ -1,32 +1,56 @@
 @import 'custom';
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+$deep-grey: #282c34;
+$white-text: rgba(255,255,255, .98);
+$blue: #247cbf;
+$orange: #ffa352;
+$turq: #16c2d9;
+$navy: #247cbf;
+$darkblue: #063745;
 
-body {
-  color: #000;
+
+body{
+  background-color: #fff;
 }
 
-button {
+h1{
+  color: $navy;
+}
+
+
+button{
   background-color: $orange;
   border-radius: 25px;
   color: #fff;
   padding: 5px;
 }
 
-a {
-  :hover{
-    cursor: pointer;
-  }
+.row:nth-child(even){
+  background-color: #fff;
 }
 
-h1 {
+.row:nth-child(odd){
+  background-color: #fff;
+  background-color: white;
   color: $dark-blue;
 }
 
-// NAV SASS
-.navbar, .navigation {
+h1{
+  color: $dark-blue;
+}
+
+.row:nth-child(2){
   background-color: $light-blue;
-  a {
+}
+
+
+
+// NAV SASS
+.navbar{
+  background-color: $light-blue;
+
+  a{
     color: $dark-blue;
   }
 }
@@ -37,7 +61,8 @@ h1 {
 .header > img {
   height: 50px;
   width: 100px;
-  @include media-breakpoint-up(lg) {
+
+  @include media-breakpoint-up(lg){
     height: 100px;
     width: 80px;
   }
@@ -47,113 +72,116 @@ h1 {
   background-size: cover;
 }
 
-button {
+button{
   background-color: $orange;
   border: $orange;
   border-radius: 5%;
 }
 
 .form-control {
-  button {}
+  button{
+
+  }
 }
 
-.index-header {
-  h1,
-  h2 {
+.index-header{
+  h1, h2{
     color: $white;
   }
 }
 
-.header-img{
-  width: 200px;
-
-}
-.about{
-  background-color: $white;
-}
 //INDEX SASS
-.circle {
-  width: 300px;
-  @include media-breakpoint-up(md) {
-    border-radius: 200%;
-    width: 500px;
-  }
+
+.circle{
+width: 300px;
+
+  @include media-breakpoint-up(md){
+  border-radius: 200%;
+  width: 500px;
+}
 }
 
-.index-outline {
+.index-outline{
   margin: 20px 0;
-  @include media-breakpoint-up(md) {
-    margin: 50px 0;
+
+  @include media-breakpoint-up(md){
+margin: 50px 0;
   }
 }
 
-.icon-nav {
+.icon-nav{
   border: 1px solid $light-blue;
   margin: 0 5px;
+  justify-content: center;
 
-  h3 {
+  h3{
     font-size: 20px;
     color: $dark-blue;
   }
-
-  :hover {
+  :hover{
     cursor: pointer;
   }
 }
+
+
 // LIST PAGE SASS
-.courses-header {
+.courses-header{
   background-color: $dark-blue;
-  margin-bottom: 20px;
-  text-align: center;
-
-  h1 {
-    color: $white;
-  }
-
-  h2 {
-    color: $white;
-  }
-
-  h3 {
-    color: $white;
-  }
-  @include media-breakpoint-up(md) {
-    height: 150px;
-    text-align: none;
-  }
+margin-bottom: 20px;
+text-align: center;
+h1{
+  color: $white;
+}
+h2{
+  color: $white
+}
+h3{
+  color: $white
 }
 
-.list-header,
-.outline-header {
+@include media-breakpoint-up(md){
+  height: 150px;
+  text-align: none;
+}
+}
+
+.list-header, .outline-header{
   background-color: $light-blue;
   color: $white;
   text-align: center;
 }
 
-.list-body {
-  .btn {
+.list-body{
+  .btn{
     background-color: $orange;
     border: $orange;
     align-self: center;
   }
 }
+
+
 // OUTLINE PAGE SASS
+
 //See List Page SASS for outline-header
-.outline-container {
+
+.outline-container{
   border: 1px solid $dark-blue;
   margin: 20px 0;
 }
 
 .courseNav {
-  a {
-    margin: 10%;
-    @include media-breakpoint-up(md) {
-      margin: 5%;
-    }
+a{
+margin: 10%;
+
+  @include media-breakpoint-up(md){
+    margin: 5%;
   }
 }
+
+}
+
 // FOOTER SASS
-.footer {
+.footer{
   background-color: $dark-blue;
   color: $white;
   text-align: center;
