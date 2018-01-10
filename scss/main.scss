@@ -102,25 +102,13 @@ button {
 }
 
 .header-img{
-<<<<<<< HEAD
   margin-top: 15px;
   width: 200px;
-=======
-  width: 30%;
-  height: auto;
-}
->>>>>>> master
 
 }
 .about{
   background-color: $white;
   border-radius: 20px;
-  @include media-breakpoint-up(md){
-    width: 150px;
-  }
-  @include media-breakpoint-up(lg){
-    width: 150px;
-  }
 }
 //INDEX SASS
 .circle {
@@ -139,8 +127,8 @@ button {
 }
 
 .icon-nav {
-
-  margin: 10px;
+  border: 1px solid $light-blue;
+  margin: 0 5px;
 
   a{
     text-decoration: none;
@@ -154,20 +142,6 @@ button {
   :hover {
     cursor: pointer;
   }
-}
-
-.mobileNav{
-  width: 125px;
-  height: 100px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  text-align: center;
-  border: none;
-}
-
-.mobNavRow{
-  width: 250px;
-  margin: 0 auto;
 }
 
 
@@ -199,7 +173,7 @@ width: 20%
 .courses-header {
   background-color: $dark-blue;
   margin-bottom: 20px;
-  padding: 20px;
+  padding-bottom: 10px;
   text-align: center;
 
   h1 {
@@ -217,10 +191,6 @@ width: 20%
     height: 100%;
     text-align: none;
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 }
 
 .list-header,
@@ -246,13 +216,6 @@ width: 20%
   width: 150px;
 }
 }
-
-iframe{
-  border: none;
-  width: 99%;
-  height: 650px;
-}
-
 // OUTLINE PAGE SASS
 //See List Page SASS for outline-header
 .outline-container {
@@ -264,7 +227,7 @@ iframe{
 }
 
 .header-outline-title{
-  padding-top: 20px;
+  padding-top: 7%;
 }
 
 .courseNav {
@@ -280,9 +243,4 @@ iframe{
   background-color: $dark-blue;
   color: $white;
   text-align: center;
-}
-
-
-.float-right{
-  float: right;
 }
